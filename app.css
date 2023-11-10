@@ -34,7 +34,7 @@ nav .navbar {
     cursor: pointer;
 }
 
-nav .login {
+.button {
     margin: 20px;
     border: 1px solid #fff;
     background-color: #181818;
@@ -159,7 +159,7 @@ nav .login {
     flex-direction: column;
 }
 
-.features-section .header-text {
+.header-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +169,7 @@ nav .login {
     gap: 10px;
 }
 
-.features-section .header-text h2 {
+.header-text h2 {
     width: 582px;
     height: 60px;
     font-size: 52px;
@@ -179,7 +179,7 @@ nav .login {
     letter-spacing: 0.2px;
 }
 
-.features-section .header-text p {
+.header-text p {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -266,4 +266,20 @@ nav .login {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.2px;
+}
+
+.partners-section {
+    display: flex;
+    padding: 50px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+    margin-top: 70px;
+}
+
+.partners-photo {
+    display: flex;
+    align-items: center;
+    gap: 74px;
 }
