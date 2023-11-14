@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: #fff;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
@@ -9,7 +10,13 @@ body {
     background-color: #181818;
     width: 100%;
     height: 100%;
-    /* font-family: "Graphik-Medium", Helvetica; */
+
+}
+
+.content-free {
+    width: 100%;
+    background-color: #181818;
+    height: 200px;
 }
 
 /* Navbar */
@@ -34,7 +41,7 @@ nav .navbar {
     cursor: pointer;
 }
 
-nav .login {
+.button {
     margin: 20px;
     border: 1px solid #fff;
     background-color: #181818;
@@ -150,16 +157,18 @@ nav .login {
 }
 
 
+/* Features Section */
+
 .features-section {
     background-image: linear-gradient(to bottom, #3b3b3b, #181818);
-    height: 1000px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.features-section .header-text {
+.header-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +178,7 @@ nav .login {
     gap: 10px;
 }
 
-.features-section .header-text h2 {
+.header-text h2 {
     width: 582px;
     height: 60px;
     font-size: 52px;
@@ -179,7 +188,7 @@ nav .login {
     letter-spacing: 0.2px;
 }
 
-.features-section .header-text p {
+.header-text p {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -208,6 +217,9 @@ nav .login {
     flex-shrink: 0;
     background: url(<path-to-image>), lightgray 50% / contain no-repeat;
     box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+}
+
+#img {
     position: relative;
 }
 
@@ -218,8 +230,8 @@ nav .login {
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
     position: absolute;
-    top: 2550px;
-    left: 1100px;
+    right: -15px;
+    bottom: -70px;
 }
 
 .content-text {
@@ -266,4 +278,127 @@ nav .login {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.2px;
+}
+
+/* Content 7 Section */
+.content-7-section {
+    margin-top: 100px;
+    display: flex;
+    padding: 50px 199px;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    align-self: stretch;
+}
+
+.card-7 {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.card-7 .card-content {
+    display: flex;
+    width: 476px;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 57px;
+    border-radius: 10px;
+    border: 1px solid #D3D3D3;
+    background: var(--light-background, #FFF);
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-7 .card-content h4 {
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+}
+
+.card-7 .card-content p {
+    color: #5C5C5C;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.2px;
+}
+
+.card-7 .card-content .content-button {
+    display: flex;
+    height: 52px;
+    padding: 20px 36px;
+    align-items: center;
+    background: #4452FE;
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.content-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-img span {
+    width: 330.581px;
+    height: 222.416px;
+    flex-shrink: 0;
+    border-radius: 4.564px 4.564px 0px 0px;
+    border: 1.521px solid #9FA2A5;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-img .img-7-1 {
+    width: 312.325px;
+    height: 195.184px;
+    flex-shrink: 0;
+    fill: url(<path-to-image>), lightgray 50% / cover no-repeat, url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+}
+
+.content-img .img-7-2 {
+    width: 405.125px;
+    height: 8.367px;
+    flex-shrink: 0;
+}
+
+.img-content-2 {
+    width: 379px;
+    height: 276px;
+    border-radius: 14px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+    /* shadow */
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Partners Section */
+
+.partners-section {
+    display: flex;
+    padding: 50px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+    margin-top: 70px;
+}
+
+.partners-photo {
+    display: flex;
+    align-items: center;
+    gap: 74px;
 }
